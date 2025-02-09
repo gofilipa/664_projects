@@ -37,9 +37,8 @@ import "@/styles/globals.css"
     <section class="flex flex-col w-full h-screen justify-center items-center">
       <p
         class="max-w-56 text-center"
-      >
-        Hello, I'm <strong>Alejandro</strong>, a fullstack developer from
-        Medellin
+      > Welcome to INFO-664 Programming for Cultural Heritiage projects! Scroll down to 
+      see the projects.
       </p>
       <DownIcon className="text-2xl animate-bounce mt-10" />
     </section>
@@ -47,6 +46,7 @@ import "@/styles/globals.css"
       <h2 class="font-bold">Projects</h2>
       <ProjectSection client:load />
     </section>
+    <!-- ORIGINAL FORMATTING: EXPERIENCE AND POSTS
     <section class="flex flex-col w-full justify-center items-center gap-28 mt-56">
       <h2 class="font-bold">Experience</h2>
       <Timeline />
@@ -55,18 +55,22 @@ import "@/styles/globals.css"
       <h2 class="font-bold">Posts</h2>
       <PostsSection client:load />
     </section>
+  -->
     <section class="flex flex-col w-full justify-center items-center gap-28 mt-56">
-      <h2 class="font-bold">About me</h2>
+      <h2 class="font-bold">About INFO-664</h2>
       <div class="flex flex-col items-center gap-4 max-w-[500px]">
-        <Avatar src="/linkedin.png" alt="Alejandro Londoño" client:load/>
+        <!-- <Avatar src="/linkedin.png" alt="Alejandro Londoño" client:load/>
         <p class="text-center">My name is <strong>Alejandro Londoño</strong>, I started programming in mid-2021 and I currently specialize in web development.</p>
         <p class="text-center">I am passionate about technology, learning new things, sharing knowledge and creating open source software.</p>
-      </div>
+        -->
+        <p class="text-center">This course teaches Python programming skills for cultural heritage contexts. Read the <a style='text-decoration: underline' href="https://www.pratt.edu/courses/programming-for-cultural-heritage/">course description</a> from the official curriculum, or see the <a style='text-decoration: underline' href='https://gofilipa.github.io/664'>course materials</a> developed by Prof. <a style='text-decoration: underline' href='https://filipacalado.com'>Filipa Calado</a>.</p>
+      
+        </div>
     </section>
   </main>
   <footer>
     <p class="text-center text-sm text-slate-700 dark:text-slate-400 p-4 mt-28">
-      Made with &#x2665; by Alejandro Londoño | @slydragonn
+      Credits: <a style='text-decoration: underline' href='https://astro.build/'>Astro</a> webframework, <a style='text-decoration: underline' href='https://github.com/slydragonn/alogocode.site'>alogocode.site</a> theme by Alejandro Londoño
     </p>
   </footer>
 </Layout>

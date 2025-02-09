@@ -12,7 +12,7 @@ interface ProjectCardProps {
   image: string
   title: string
   description: string
-  tags: string[]
+  creator: string
   links: ProjectLink[]
 }
 
@@ -20,7 +20,7 @@ const ProjectCard = ({
   image,
   title,
   description,
-  tags,
+  creator,
   links,
 }: ProjectCardProps) => {
   const projectRef = useRef(null)
@@ -70,7 +70,7 @@ const ProjectCard = ({
       />
       <div className="flex flex-col justify-between gap-4">
         <h3 className="font-bold text-2xl">{title}</h3>
-        <div className="flex flex-wrap gap-4">
+        {/* <div className="flex flex-wrap gap-4">
           {tags.map((tag, index) => (
             <Badge
               key={index}
@@ -79,7 +79,8 @@ const ProjectCard = ({
               {tag}
             </Badge>
           ))}
-        </div>
+        </div> */}
+        <p className="max-w-[800px] text-lg">{creator}</p>
         <p className="max-w-[800px] text-lg">{description}</p>
         <div className="flex flex-wrap gap-4">
           {links.map((link, index) => (

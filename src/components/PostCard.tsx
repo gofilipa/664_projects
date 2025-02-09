@@ -14,11 +14,11 @@ interface PostCardProps {
   title: string
   description: string
   date: string
-  tags: string[]
+  creator: string
   url: string
 }
 
-const PostCard = ({ title, description, date, tags, url }: PostCardProps) => {
+const PostCard = ({ title, description, date, creator, url }: PostCardProps) => {
   return (
     <Card className="w-full">
       <CardHeader>
@@ -45,15 +45,15 @@ const PostCard = ({ title, description, date, tags, url }: PostCardProps) => {
             >
               {date}
             </Badge>
-            {tags.map((tag) => (
+            {/* {tags.map((tag) => (
               <Badge
                 key={tag}
                 variant="outline"
                 className="text-slate-700 dark:text-slate-400"
               >
                 {tag}
-              </Badge>
-            ))}
+              </Badge> 
+            ))}*/}
           </div>
           <a href={url} target="_blank" rel="noreferrer">
             <Button variant="secondary">

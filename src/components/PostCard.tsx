@@ -15,10 +15,11 @@ interface PostCardProps {
   description: string
   date: string
   creator: string
+  tools: string[]
   url: string
 }
 
-const PostCard = ({ title, description, date, creator, url }: PostCardProps) => {
+const PostCard = ({ title, description, date, creator, tools, url }: PostCardProps) => {
   return (
     <Card className="w-full">
       <CardHeader>

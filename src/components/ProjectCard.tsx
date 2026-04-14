@@ -13,6 +13,7 @@ interface ProjectCardProps {
   title: string
   description: string
   creator: string
+  tools: string[]
   links: ProjectLink[]
 }
 
@@ -21,6 +22,7 @@ const ProjectCard = ({
   title,
   description,
   creator,
+  tools,
   links,
 }: ProjectCardProps) => {
   const projectRef = useRef(null)
@@ -82,6 +84,7 @@ const ProjectCard = ({
         </div> */}
         <p className="max-w-[800px] text-lg">{creator}</p>
         <p className="max-w-[800px] text-lg">{description}</p>
+        <p className="max-w-[800px] text-lg">Tools used: {tools}</p>
         <div className="flex flex-wrap gap-4">
           {links.map((link, index) => (
             <a key={index} href={link.url} target="_blank" rel="noreferrer">
